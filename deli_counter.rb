@@ -3,6 +3,7 @@ def line(katz_deli)
   case
   when katz_deli.length == 0
     puts "The line is currently empty."
+    take_a_number(katz_deli, "Ada")
   when katz_deli.length > 0
     line_announce = "The line is currently:"
     katz_deli.each_with_index do |name, index|
@@ -14,7 +15,6 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  if katz_deli.length == 0
     puts "Welcome, #{name}. You are number 1 in line."
   end
 end
