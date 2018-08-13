@@ -8,5 +8,6 @@ def line(katz_deli)
     katz_deli.each do |name, index|
       line_announce << "#{index}. #{name}"
     end
+    puts line_announce
   end
 end
